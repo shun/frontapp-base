@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  angular:
+    image: kudoshunsuke/angular-base
+    build:
+      context: ./
+      dockerfile: ./angular/Dockerfile
+
+  vue:
+    image: kudoshunsuke/vue-base
+    build:
+      context: ./
+      dockerfile: ./vue/Dockerfile
+
+  react:
+    image: kudoshunsuke/react-base
+    build:
+      context: ./
+      dockerfile: ./react/Dockerfile
